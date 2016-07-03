@@ -5,6 +5,71 @@
 }
 
 body {
-	font-size: 14px;
+	min-width: 960px;
 
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;	
+	
+	color: #fff;
+	text-transform: uppercase; 	
+	background: #000 url("../img/bg-index.jpg") no-repeat center top; 
 }
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+ 
+.container {
+	width: 960px;
+	margin: 0 auto;
+	border: 1px dashed #fff;
+}
+
+
+.main-header {
+	margin-bottom: 60px;
+	color: #fff;
+	background-color: #000;
+}
+
+.main-navigation {
+	float: left;
+	width: 780px;
+	
+}
+.main-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-navigation li {
+	display: inline-block;
+	
+	font-size: 16px;
+	line-height: 20px;
+	vertical-align: top;
+}
+
+.main-navigation a {
+	display: block;
+	padding: 25px 20px;
+	
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-navigation a:hover {
+	background-color: #242424;
+}
+
+/* Логоти промо */
+.index-logo {
+	text-align: center;
+}
+
