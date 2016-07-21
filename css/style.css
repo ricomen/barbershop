@@ -8,13 +8,16 @@ body {
 	
 	text-transform: uppercase;
 	background-color: #000;
-	
-}
-
-.main-page {
 	color: #fff;
 	background-image: url(../img/bg-index.jpg);
 	background-repeat: no-repeat;
+	
+}
+
+.inner-page {
+	color: #000;
+	background: #f8f3f0 url("../img/content-bg-pattern.jpg");
+	
 }
 .container {
 	margin: 0 auto;
@@ -31,13 +34,24 @@ body {
 	margin-bottom: 60px;
 	font-size 16px;
 	line-height: 20px;
+	color: #fff;
 	background-color: #000;
 }
 
 .main-navigation {
 	float: left;
 	windt: 780px;
+}
 
+.main-navigation .inner-logo {
+	float: left;
+	width: 111px;
+	height: 23px;
+	padding-top: 22px;
+}
+
+.main-navigation .inner-logo:hover {
+	background: none;
 }
 .main-navigation ul {
 	display: flex;
@@ -60,6 +74,31 @@ body {
 .main-navigation a:hover {
 	background-color: #242424;
 }
+.main-navigation .active {
+	position: relative;
+	background-color: none;
+}
+
+.main-navigation .active a:hover {
+	background: none;
+}
+
+.main-navigation .active::after {
+	content: "";
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+	right: 20px;
+	height: 4px;
+
+	background-color: #fff;
+}
+
+.main-navigation .active span {
+	display: block;
+	padding: 25px 20px;
+}
+
 .user-block {
 	float: right;
 	max-width: 140px;
@@ -295,6 +334,7 @@ body {
 	margin-top: 65px;
 	padding-top: 60px;
 	padding-bottom: 40px;
+	color: #fff;
 	background: #242424 url("../img/footer-bg-pattern.jpg");
 }
 
