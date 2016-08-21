@@ -1,1 +1,1 @@
-start browser-sync start --server --files "css/*.css, *.html"
+start browser-sync start --server --files "css/*.css, *.html, js/modal.js"

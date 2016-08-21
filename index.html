@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-
   <div class="main-header">
     <div class="container clearfix">
        <nav class="main-navigation">
@@ -94,7 +93,7 @@
           ПН-ПТ: С 10:00 до 22:00<br>
           СБ-ВС: С 10:00 до 19:00<br>
           </p>      
-          <a href="map.html" class="btn">Как проехать</a>
+          <a href="map.html" class="btn js-open-map">Как проехать</a>
           <a href="#" class="btn">Обратная связь</a>
 
         </div>
@@ -102,11 +101,11 @@
          <div class="index-content-right">
         <h2 class="index-contetn-title">Записаться</h2>
         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="appointment-form" action="" method="post"> 
-          <input type="date" name="date" value="Дата">
-          <input type="time" name="time" value="Время">
-          <input type="text" name="name" value="Ваше имя">
-          <input type="text" name="name" value="Телефон">
+        <form class="appointment-form" action="form.php" method="post"> 
+          <input type="text" name="date" value="" placeholder="Дата">
+          <input type="text" name="time" value="" placeholder="Время">
+          <input type="text" name="name" value="" placeholder="Ваше имя">
+          <input type="text" name="name" value="" placeholder="Телефон">
           <button class="btn" type="submit">Отправить</button>
         </form>
         </div>
@@ -133,23 +132,24 @@
       </section>      
     </div>
   </footer>
-<div class="modal-content">
-<h2>Личный кабинет</h2>
-<p>Введите пожалуйста свои имя и пароль</p>
-  <button class="modal-content-close" type="button">Закрыть</button>
-  <form class="login-form" action="#" method="post">
-    <input class="icon-user" type="text" name="login" value="" placeholder="Логин" required><br>
-    <input class="icon-locked" type="password" name="password" value="" placeholder="Пароль" required>      
-    <input id="remember-me" type="checkbox" name="remember-me" checked>
-    <label for="remember-me">Запомнить меня<span class="checkbox-indicator"></span></label>
-    <a class="forgot-pass" href="forgot-pass.html">Я забыль пароль!</a>
-    <button class="btn" type="submit">Войти</button>
-    </form>   
-</div>
-<div class="modal-content-overlay"></div>
+  <div class="modal-content">
+  <h2>Личный кабинет</h2>
+  <p>Введите пожалуйста свои имя и пароль</p>
+    <button class="modal-content-close" type="button">Закрыть</button>
+    <form class="login-form" action="#" method="post">
+      <input class="icon-user" type="text" name="login" value="" placeholder="Логин" ><br>
+      <input class="icon-locked" type="password" name="password" value="" placeholder="Пароль" >      
+      <input id="remember-me" type="checkbox" name="remember-me" checked>
+      <label for="remember-me">Запомнить меня<span class="checkbox-indicator"></span></label>
+      <a class="forgot-pass" href="forgot-pass.html">Я забыль пароль!</a>
+      <button class="btn" type="submit">Войти</button>
+      </form>   
+  </div>
+  <div class="modal-content-overlay"></div>
 
  <div class="modal-content-map">
   <button class="modal-content-close" type="button">Закрыть</button>
+ <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124118!2d30.320894616292957!3d59.9387968690477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1469689502742" width="766" height="561" allowfullscreen></iframe>
  </div>
 <div class="modal-content-overlay"></div>
 <script src="js/modal.js"></script>

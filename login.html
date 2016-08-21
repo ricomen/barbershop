@@ -13,6 +13,7 @@
   <div class="main-header">
     <div class="container clearfix">
        <nav class="main-navigation">
+        <a class="inner-logo" href="index.html"><img src="img/inner-logo.png"  width="111" height="24" alt="Барбершоп «Бородинский»"></a>
         <ul>
           <li><a href="">Информация</a></li>
           <li><a href="">Новости</a></li>
@@ -22,7 +23,7 @@
         </ul>
       </nav>
        <div class="user-block">
-        <a class="login" href="login.html">Вход</a>
+        <span class="login" href="login.html">Вход</span>
       </div>
     </div>
   </div>
@@ -39,6 +40,7 @@
      <a class="forgot-pass" href="forgot-pass.html">Я забыль пароль!</a>
      <button class="btn" type="submit">Войти</button>
      </form>
+     </div>
      </div>
   </main>
   <footer class="main-footer">
@@ -62,5 +64,19 @@
       </section>      
     </div>
   </footer>
+  <div class="modal-content">
+<h2>Личный кабинет</h2>
+<p>Введите пожалуйста свои имя и пароль</p>
+  <button class="modal-content-close" type="button">Закрыть</button>
+  <form class="login-form" action="#" method="post">
+    <input class="icon-user" type="text" name="login" value="" placeholder="Логин" ><br>
+    <input class="icon-locked" type="password" name="password" value="" placeholder="Пароль" >      
+    <input id="remember-me" type="checkbox" name="remember-me" checked>
+    <label for="remember-me">Запомнить меня<span class="checkbox-indicator"></span></label>
+    <a class="forgot-pass" href="forgot-pass.html">Я забыль пароль!</a>
+    <button class="btn" type="submit">Войти</button>
+    </form>   
+  </div>
+  <div class="modal-content-overlay"></div>
  </body>
 </html>
